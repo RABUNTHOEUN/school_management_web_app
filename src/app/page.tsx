@@ -1,13 +1,12 @@
-import NavBarComponent from '@/components/client/nav-bar-component'
 import React from 'react'
+import HomePage from './(client)/home/page'
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <div className='mx-auto max-w-screen-2xl'>
-      <nav><NavBarComponent/></nav>
-      Home Page
-    </div>
+    <>
+      <HomePage />
+    </>
   )
 }
 
-export default HomePage
+export default Home
