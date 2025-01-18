@@ -39,7 +39,7 @@ const chartConfig = {
 
 export function BarChartComponent() {
   return (
-    <Card>
+    <Card className="bg-muted/50">
       <CardHeader>
         <CardTitle>Bar Chart - Multiple</CardTitle>
         <CardDescription>January - June 2024</CardDescription>

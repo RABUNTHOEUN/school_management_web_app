@@ -37,9 +37,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   <BreadcrumbPage>Data Fetching</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
-              <div className="flex-grow max-w-md ml-4">
-                <Input type="text" placeholder="Search..." className="w-full" />
-              </div>
+              
             </Breadcrumb>
           </div>
         </header>
