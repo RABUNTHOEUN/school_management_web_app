@@ -36,7 +36,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   <BreadcrumbPage>Data Fetching</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
-              
+              {/* <div className="text-center ml-4">
+                <h1 className="text-2xl font-semibold">Admin</h1>
+              </div> */}
             </Breadcrumb>
           </div>
         </header>

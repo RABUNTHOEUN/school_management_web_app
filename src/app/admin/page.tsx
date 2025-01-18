@@ -1,7 +1,7 @@
 import { BarChartComponent } from "@/components/admin/charts/bar-charts";
 import { RecentTable } from "@/components/admin/tables/recent-table";
 import { Input } from "@/components/ui/input";
-import { Activity, CreditCard, DollarSign, User } from "lucide-react";
+import { Activity, CreditCard, DollarSign, Users } from "lucide-react";
 
 export default function AdminDashboard() {
 
@@ -29,7 +29,7 @@ export default function AdminDashboard() {
                     <div className="justify-between items-start">
                         <div className="flex items-center justify-between mb-2">
                             <p>Subscriptions</p>
-                            <User color="gray" />
+                            <Users color="gray" />
                         </div>
                         <h2 className="text-3xl font-semibold">+2350</h2>
                         <p className="text-sm text-gray-500">+180.1% from last month</p>

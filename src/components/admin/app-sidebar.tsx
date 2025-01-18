@@ -3,12 +3,19 @@
 import * as React from "react"
 import {
   AudioWaveform,
+  BellRing,
+  Book,
   BookOpen,
-  Bot,
+  Calendar,
   Command,
   GalleryVerticalEnd,
+  Landmark,
+  LogIn,
+  School,
   Settings2,
-  SquareTerminal,
+  Ticket,
+  User2Icon,
+  UserSquare,
 } from "lucide-react"
 
 import { NavMain } from "@/components/admin/nav-main"
@@ -48,10 +55,21 @@ const data = {
   ],
   navMain: [
     {
+      title: "Admin",
+      url: "#",
+      icon: UserSquare,
+      isActive: true,
+      items: [
+        {
+          title: "Dashboard",
+          url: "/admin/",
+        },
+      ],
+    },
+    {
       title: "Academics ",
       url: "#",
-      icon: SquareTerminal,
-      isActive: true,
+      icon: School,
       items: [
         {
           title: "Student Management",
@@ -82,7 +100,7 @@ const data = {
     {
       title: "Finance",
       url: "#",
-      icon: Bot,
+      icon: Landmark,
       items: [
         {
           title: "Fee Management",
@@ -103,8 +121,8 @@ const data = {
     },
     {
       title: "Transport",
-      url: "/admin/teachers",
-      icon: Settings2,
+      url: "/admin/transports",
+      icon: Ticket,
       items: [
         {
           title: "Transport Management",
@@ -115,7 +133,7 @@ const data = {
     {
       title: "Events",
       url: "#",
-      icon: Settings2,
+      icon: Calendar,
       items: [
         {
           title: "Event Management",
@@ -126,7 +144,7 @@ const data = {
     {
       title: "Notifications",
       url: "#",
-      icon: Settings2,
+      icon: BellRing,
       items: [
         {
           title: "Notifications",
@@ -137,7 +155,7 @@ const data = {
     {
       title: "Reports",
       url: "#",
-      icon: Settings2,
+      icon: Book,
       items: [
         {
           title: "Reports",
@@ -159,7 +177,7 @@ const data = {
     {
       title: "User Management",
       url: "#",
-      icon: Settings2,
+      icon: User2Icon,
       items: [
         {
           title: "User Management",
@@ -170,7 +188,7 @@ const data = {
     {
       title: "Logs",
       url: "#",
-      icon: Settings2,
+      icon: LogIn,
       items: [
         {
           title: "Logs",
