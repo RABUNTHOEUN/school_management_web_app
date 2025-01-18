@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavMenuHomeComponent() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-12">
+      <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>

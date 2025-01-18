@@ -1,13 +1,62 @@
+import { BarChartComponent } from "@/components/admin/charts/bar-charts";
+import { Currency } from "lucide-react";
+
 export default function AdminDashboard() {
 
     return (
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-            <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-                <div className="border border-gray-300 aspect-video rounded-xl bg-muted/50" />
-                <div className="border border-gray-300 aspect-video rounded-xl bg-muted/50" />
-                <div className="border border-gray-300 aspect-video rounded-xl bg-muted/50" />
+            <h1 className="text-2xl font-semibold">Dashboard</h1>
+            <div className="grid auto-rows-min gap-4 md:grid-cols-4">
+                <div className="w-full rounded-xl border p-4 bg-muted/50" >
+                    <div className="justify-between items-start">
+                        <div className="flex items-center justify-between mb-2">
+                            <p>Total Revenue</p>
+                            <Currency color="gray" />
+                        </div>
+                        <h2 className="text-3xl font-semibold">$45,231.89</h2>
+                        <p className="text-sm text-gray-500">+20.1% from last month</p>
+                    </div>
+                </div>
+                <div className="w-full rounded-xl border p-4 bg-muted/50" >
+                    <div className="justify-between items-start">
+                        <div className="flex items-center justify-between mb-2">
+                            <p>Subscriptions</p>
+                            <Currency color="gray" />
+                        </div>
+                        <h2 className="text-3xl font-semibold">+2350</h2>
+                        <p className="text-sm text-gray-500">+180.1% from last month</p>
+                    </div>
+                </div>
+                <div className="w-full rounded-xl border p-4 bg-muted/50" >
+                    <div className="justify-between items-start">
+                        <div className="flex items-center justify-between mb-2">
+                            <p>Sales</p>
+                            <Currency color="gray" />
+                        </div>
+                        <h2 className="text-3xl font-semibold">+12,234</h2>
+                        <p className="text-sm text-gray-500">+19% from last month</p>
+                    </div>
+                </div>
+                <div className="w-full rounded-xl border p-4 bg-muted/50" >
+                    <div className="justify-between items-start">
+                        <div className="flex items-center justify-between mb-2">
+                            <p>Active Now</p>
+                            <Currency color="gray" />
+                        </div>
+                        <h2 className="text-3xl font-semibold">+573</h2>
+                        <p className="text-sm text-gray-500">+201 since last hour</p>
+                    </div>
+                </div>
             </div>
-            <div className="border border-gray-300 min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+            <div className="flex gap-4 w-full">
+                <div className="rounded-xl bg-muted/50 w-1/2" >
+                    <BarChartComponent />
+                </div>
+                <div className="rounded-xl bg-muted/50 w-1/2" >
+                    <BarChartComponent />
+                </div>
+
+            </div>
         </div>
     )
 }

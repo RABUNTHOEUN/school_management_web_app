@@ -6,16 +6,12 @@ import {
   BookOpen,
   Bot,
   Command,
-  Frame,
   GalleryVerticalEnd,
-  Map,
-  PieChart,
   Settings2,
   SquareTerminal,
 } from "lucide-react"
 
 import { NavMain } from "@/components/admin/nav-main"
-import { NavProjects } from "@/components/admin/nav-projects"
 import { NavUser } from "@/components/admin/nav-user"
 import { TeamSwitcher } from "@/components/admin/team-switcher"
 import {
