@@ -9,7 +9,7 @@ const HeaderHome = () => {
         <div>
             <div className='flex mx-4 sm:flex-row gap-4 items-center justify-between my-4'>
                 {/* Logo - Hidden on mobile, visible on medium screens and above */}
-                <h1 className='text-xl font-bold hidden sm:block text-green-700'>LOGO</h1>
+                <h1 className='text-xl font-bold hidden sm:block'>LOGO</h1>
 
                 {/* Burger Menu - Visible on mobile, hidden on medium screens and above */}
                 <div className='flex justify-center items-center'>
